@@ -1,0 +1,59 @@
+export const metadata = {
+  title: "Market Cycle Framework | QuantTam",
+  description:
+    "Framework phân tích chu kỳ thị trường kết hợp tín hiệu giá, dòng tiền và hành vi nhà đầu tư.",
+};
+
+# Market Cycle Framework
+
+Đây là ghi chú đầu tiên của tôi về cách tiếp cận **chu kỳ thị trường** trong đầu tư chứng khoán Việt Nam.
+
+---
+
+## Góc nhìn chính
+
+Thị trường có thể được quan sát thông qua nhiều **lớp tín hiệu độc lập**. Không có một chỉ báo nào đủ mạnh để xác định chu kỳ một mình — sức mạnh nằm ở sự *hội tụ* của nhiều tín hiệu cùng lúc.
+
+Các lớp tín hiệu tôi theo dõi:
+
+- **Xu hướng giá** — MA, EMA, price structure, higher highs/lows
+- **Độ rộng thị trường** — advance/decline ratio, % cổ phiếu trên MA50
+- **Thanh khoản** — volume, value giao dịch toàn thị trường
+- **Dòng tiền** — ETF flow, fund positioning, margin lending
+- **Hành vi nhà đầu tư** — sentiment index, FOMO signals
+- **Bối cảnh vĩ mô** — lãi suất, tỷ giá, chu kỳ GDP
+
+---
+
+## Bốn giai đoạn chu kỳ
+
+### 1. Tích lũy (Accumulation)
+
+Giai đoạn smart money bắt đầu mua vào. Thanh khoản thấp, giá đi ngang, sentiment tiêu cực nhưng đang dần cải thiện.
+
+> *"Khi đám đông sợ hãi nhất, thị trường thường đang ở đáy tích lũy."*
+
+### 2. Tăng trưởng (Markup)
+
+Xu hướng tăng rõ ràng, độ rộng mở rộng, dòng tiền vào tích cực. Đây là giai đoạn thuận lợi nhất để đầu tư theo xu hướng.
+
+### 3. Phân phối (Distribution)
+
+Giá tiếp tục tăng nhưng momentum yếu dần. Smart money bắt đầu thoát hàng trong khi retail chưa nhận ra. Dấu hiệu nhận biết: **divergence** giữa giá và thanh khoản.
+
+### 4. Giảm giá (Markdown)
+
+Xu hướng giảm mạnh, thanh khoản giảm, sentiment cực kỳ tiêu cực. Giai đoạn để chờ đợi và bảo toàn vốn.
+
+---
+
+## Định hướng nghiên cứu
+
+Mục tiêu dài hạn là xây dựng một `CycleDetector` — module kết hợp giữa:
+
+1. Phân tích kỹ thuật hiện đại (price action, breadth)
+2. Quantitative signal research (factor scoring)
+3. Machine learning để phát hiện regime change
+4. Behavioral indicators từ dữ liệu giao dịch thực tế
+
+Framework này sẽ là nền tảng cho hệ thống **AI Advisor** trong tương lai.
